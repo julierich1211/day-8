@@ -1,8 +1,8 @@
 //**
- //* 1. create a new repo on Github called TIY-hw08 (08 for the day,
- //* 2. add this script file to your index.html and run it in the browser to get the output
- //* 3. debug and see the console.log() messages in the chrome dev tools
- //*/
+//* 1. create a new repo on Github called TIY-hw08 (08 for the day,
+//* 2. add this script file to your index.html and run it in the browser to get the output
+//* 3. debug and see the console.log() messages in the chrome dev tools
+//*/
 
 /**
  *
@@ -40,16 +40,16 @@ max(6, 8, 4);
 // ---------------------
 'use strict'
 
-var isVowel = [a, e, i, o, u]; 
+var isVowel = [a, e, i, o, u];
 var vowel = function isVowel(char) {
     if (char === isVowel); {
         return true;
     } else {
         return false;
-}
-        console.log("");
     }
-    vowel("b");
+    console.log("");
+}
+vowel("b");
 
 // Write a function translate() that will translate a text into "rövarspråket". 
 // //That is, double every consonant and place an occurrence of "o" in between. 
@@ -58,19 +58,33 @@ var vowel = function isVowel(char) {
 'use strict'
 
 var translate = function rovarspraket(text) {
-  var string = text.toLowerCase();
-  var vowels = ["a", "e", "i", "o", "u", " "];
-  var con = "";
-  for (i = 0; i < string.length; i++) {
-     var now = string.charAt(i); 
-    if (vowels.indexOf(now) != -1)
-    con = (con + (now));
-   else 
-    con = (con + (now + "o" + now));
-  }
-  return con;
+    var string = text.toLowerCase();
+    var vowels = ["a", "e", "i", "o", "u", " "];
+    var con = "";
+    for (i = 0; i < string.length; i++) {
+        var now = string.charAt(i);
+        if (vowels.indexOf(now) != -1)
+            con = (con + (now));
+        else
+            con = (con + (now + "o" + now));
+    }
+    return con;
 }
 translate("this is fun")
+// Define a function sum() and a function multiply() that sums and multiplies (respectively) 
+// //all the numbers in an array of numbers. 
+// For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
+// ---------------------
+'use strict'
 
-    
+function sum(a, b, c, d, e) {
+    return a + b + c + d + e;
+    console.log(sum);
+};
+sum(2, 4, 5, 6, 7);
 
+function multiply(a, b, c, d, e) {
+    return a * b * c * d * e;
+    console.log(multiply);
+};
+multiply(2, 4, 5, 6, 7);
