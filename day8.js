@@ -1,4 +1,5 @@
 
+
 //* 1. create a new repo on Github called TIY-hw08 (08 for the day,
 //* 2. add this script file to your index.html and run it in the browser to get the output
 //* 3. debug and see the console.log() messages in the chrome dev tools
